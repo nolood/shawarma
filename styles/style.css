@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "ubuntubold";
+  src: url('./../fonts/Ubuntu-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ubuntumedium";
+  src: url('./../fonts/Ubuntu-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'ubuntumedium', serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: #070707;
+  background-color: #fff;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Header */
+
+header {
+  background-image: url('./../img/main-picture.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar__wrapper {
+  height: 100px;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  padding-right: 20px;
+  border-right: 5px solid #FFA200;
+}
+
+.navbar__title {
+  font-family: 'ubuntumedium';
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  max-width: 181px;
+  color: #000000;
+  margin-left: 20px;
+}
+
+.navbar__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navbar__contacts-tel {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+.navbar__contacts-time {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+}
+
+
+.navbar__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.navbar__item {
+  margin-right: 30px;
+}
+
+
+.navbar__logo-wrapper {
+  display: flex;
+  align-items: center;
+}
