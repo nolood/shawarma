@@ -9,44 +9,267 @@
 </head>
 <body>
   <header>
-    <div class="container header__wrapper">
-      <div class="container navbar__wrapper">
-        <div class="navbar__logo-wrapper">
-          <div class="navbar__logo">
-            <img src="./img/main-logo.png" alt="logo">
-          </div>
-          <span class="navbar__title">
-            Изготовление мебели на заказ в Челябинске
-          </span>
+    <div class="container navbar__wrapper">
+      <div class="navbar__logo-wrapper">
+        <div class="navbar__logo">
+          <picture>
+            <source media="(max-width: 500px)" srcset="./img/logo-mobile.png">
+            <img src="./img/main-logo.png" alt="">
+          </picture>
         </div>
-        <nav class="navbar__nav">
-          <ul class="navbar__list">
-            <li class="navbar__item">
-              <a class="navbar__link" href="#">Каталог</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#">Заявка</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#">Отзывы</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="navbar__contacts">
-          <span class="navbar__contacts-tel">
-            8 (999) 444-34-22
-          </span>
-          <span class="navbar__contacts-time">
-            с 9 00 до 18 00
-          </span>
-        </div>
+        <span class="navbar__title">
+          Изготовление мебели на заказ в Челябинске
+        </span>
       </div>
-
-      <h1>
+      <nav class="navbar__nav">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">Каталог</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">Заявка</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="navbar__contacts">
+        <span class="navbar__contacts-tel">
+          8 (999) 444-34-22
+        </span>
+        <span class="navbar__contacts-time">
+          с 9 00 до 18 00
+        </span>
+      </div>
+      <button class="navbar__burger">Открыть меню</button>
+    </div>
+    <div class="container header__wrapper">
+      <p class="header__title header__title--part1">
         СОЗДАВАЯ СВОЕ ПРОСТРАНСТВО В ДОМЕ ТОЛЬКО ВЫ РЕШАЕТЕ:
+      </p>
+      <p class="header__title header__title--part2">
         ПОДСТРАИВАТЬСЯ ПОД МЕБЕЛЬ ИЛИ ВЫБИРАТЬ МЕБЕЛЬ ПОД СЕБЯ
-      </h1>
+      </p>
+      <div class="header__info">
+        <button class="header__btn">
+          <span class="header__btn-title">вызвать замерщика</span>
+          <img class="header__btn-img" src="./img/shake-hand.png" alt="">
+        </button>
+        <p class="header__info-text">ЗАКАЖИТЕ ВЫЕЗД ЗАМЕРЩИКА НА&nbsp;ДОМ<br />
+          ЭТО БЕСПЛАТНО</p>
+      </div>
     </div>
   </header>
+  <main>
+    <section class="catalog__wrapper">
+      <div class="container catalog">
+        <div class="catalog__tabs">
+          <h2 class="title">Каталог</h2>
+          <ul class="catalog__list">
+            <li data-tab-name="shkaf" class="catalog__item catalog__item--active">
+              <button class="catalog__btn">
+                Шкаф-купе
+              </button>
+            </li>
+            <li data-tab-name="office" class="catalog__item">
+              <button class="catalog__btn">
+                Офисная
+              </button>
+            </li>
+            <li data-tab-name="kitchen" class="catalog__item">
+              <button class="catalog__btn">
+                Кухни
+              </button>
+            </li>
+            <li data-tab-name="child" class="catalog__item">
+              <button class="catalog__btn">
+                Детская
+              </button>
+            </li>
+          </ul>
+        </div>
+        <ul class="catalog__content catalog__content--active shkaf">
+          <li class="catalog__content-card">
+            <img src="./img/shkaf.png" alt="">
+            <div class="catalog__content__info">
+              <div class="catalog__content-leftside">
+                <span class="catalog__content-title">
+                  Шкаф
+                </span>
+                <span class="catalog__content-price">
+                  От 15000
+                </span>
+              </div>
+              <button class="catalog__content-btn">Заказать</button>
+            </div>
+          </li>
+          <li class="catalog__content-card">
+            <img src="./img/shkaf.png" alt="">
+            <div class="catalog__content__info">
+              <div class="catalog__content-leftside">
+                <span class="catalog__content-title">
+                  Шкаф
+                </span>
+                <span class="catalog__content-price">
+                  От 15000
+                </span>
+              </div>
+              <button class="catalog__content-btn">Заказать</button>
+            </div>
+          </li>
+          <li class="catalog__content-card">
+            <img src="./img/shkaf.png" alt="">
+            <div class="catalog__content__info">
+              <div class="catalog__content-leftside">
+                <span class="catalog__content-title">
+                  Шкаф
+                </span>
+                <span class="catalog__content-price">
+                  От 15000
+                </span>
+              </div>
+              <button class="catalog__content-btn">Заказать</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="catalog__content office">
+          <li class="catalog__content-card">
+            <img src="./img/shkaf.png" alt="">
+            <div class="catalog__content__info">
+              <div class="catalog__content-leftside">
+                <span class="catalog__content-title">
+                  Стул
+                </span>
+                <span class="catalog__content-price">
+                  От 23000
+                </span>
+              </div>
+              <button class="catalog__content-btn">Заказать</button>
+            </div>
+          </li>
+          <li class="catalog__content-card">
+            <img src="./img/child.png" alt="">
+            <div class="catalog__content__info">
+              <div class="catalog__content-leftside">
+                <span class="catalog__content-title">
+                  Стул
+                </span>
+                <span class="catalog__content-price">
+                  От 23000
+                </span>
+              </div>
+              <button class="catalog__content-btn">Заказать</button>
+            </div>
+          </li>
+          <li class="catalog__content-card">
+            <img src="./img/kitchen.png" alt="">
+            <div class="catalog__content__info">
+              <div class="catalog__content-leftside">
+                <span class="catalog__content-title">
+                  Стул
+                </span>
+                <span class="catalog__content-price">
+                  От 23000
+                </span>
+              </div>
+              <button class="catalog__content-btn">Заказать</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="catalog__content kitchen">
+          <li class="catalog__content-card">
+            <img src="./img/kitchen.png" alt="">
+            <div class="catalog__content__info">
+              <div class="catalog__content-leftside">
+                <span class="catalog__content-title">
+                  Кухня
+                </span>
+                <span class="catalog__content-price">
+                  От 15000
+                </span>
+              </div>
+              <button class="catalog__content-btn">Заказать</button>
+            </div>
+          </li>
+          <li class="catalog__content-card">
+            <img src="./img/kitchen.png" alt="">
+            <div class="catalog__content__info">
+              <div class="catalog__content-leftside">
+                <span class="catalog__content-title">
+                  Кухня
+                </span>
+                <span class="catalog__content-price">
+                  От 15000
+                </span>
+              </div>
+              <button class="catalog__content-btn">Заказать</button>
+            </div>
+          </li>
+          <li class="catalog__content-card">
+            <img src="./img/kitchen.png" alt="">
+            <div class="catalog__content__info">
+              <div class="catalog__content-leftside">
+                <span class="catalog__content-title">
+                  Кухня
+                </span>
+                <span class="catalog__content-price">
+                  От 15000
+                </span>
+              </div>
+              <button class="catalog__content-btn">Заказать</button>
+            </div>
+          </li>
+        </ul>
+        <ul class="catalog__content child">
+          <li class="catalog__content-card">
+            <img src="./img/child.png" alt="">
+            <div class="catalog__content__info">
+              <div class="catalog__content-leftside">
+                <span class="catalog__content-title">
+                  Детская
+                </span>
+                <span class="catalog__content-price">
+                  От 15000
+                </span>
+              </div>
+              <button class="catalog__content-btn">Заказать</button>
+            </div>
+          </li>
+          <li class="catalog__content-card">
+            <img src="./img/child.png" alt="">
+            <div class="catalog__content__info">
+              <div class="catalog__content-leftside">
+                <span class="catalog__content-title">
+                  Детская
+                </span>
+                <span class="catalog__content-price">
+                  От 15000
+                </span>
+              </div>
+              <button class="catalog__content-btn">Заказать</button>
+            </div>
+          </li>
+          <li class="catalog__content-card">
+            <img src="./img/child.png" alt="">
+            <div class="catalog__content__info">
+              <div class="catalog__content-leftside">
+                <span class="catalog__content-title">
+                  Детская
+                </span>
+                <span class="catalog__content-price">
+                  От 15000
+                </span>
+              </div>
+              <button class="catalog__content-btn">Заказать</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="./script.js"></script>
 </body>
 </html>
