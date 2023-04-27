@@ -42,10 +42,15 @@ img {
 /* Header */
 
 header {
-  background-image: url('./../img/main-picture.png');
+  background-image: url('../img/main-picture.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
 }
 
 .navbar__wrapper {
@@ -55,13 +60,12 @@ header {
   align-items: center;
   background-color: white;
   position: fixed;
-  top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-48.3%);
   justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
   z-index: 5;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .navbar__logo {
@@ -338,7 +342,7 @@ header {
   /* identical to box height */
   padding: 11px 20px;
   text-transform: uppercase;
-
+  cursor: pointer;
   color: #FFFFFF;
 }
 
@@ -399,7 +403,7 @@ header {
   /* identical to box height */
   max-height: 50px;
   text-transform: uppercase;
-
+  cursor: pointer;
   color: #FFFFFF;
 }
 
@@ -623,7 +627,6 @@ input:focus {
 
 
 
-
 @media (max-width: 1200px) {
   .navbar__contacts {
     display: none;
@@ -694,7 +697,10 @@ input:focus {
   .form__wrapper-form {
     padding-left: 20px;
   }
-  
+  .reviews__wrapper {
+    width: 600px;
+  }
+
 }
 
 

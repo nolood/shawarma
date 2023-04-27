@@ -5,20 +5,24 @@ const catalogTabsContent = document.querySelectorAll('.catalog__content')
 const slider = document.querySelector('.reviews__list')
 const nextSlide = document.getElementById('next')
 const prevSlide = document.getElementById('prev')
+const slide = document.querySelector('.reviews__item')
+const allSlides = document.querySelectorAll('.reviews__item')
 let offset = 0;
 
+
+
 nextSlide.addEventListener('click', () => {
-  offset += 1200;
-  if (offset > 3600) {
+  offset += slide.offsetWidth + 20;
+  if (offset > (slide.offsetWidth + 20) * (allSlides.length - 1)) {
     offset = 0
   }
   slider.style.left = -offset + 'px'
 })
 
 prevSlide.addEventListener('click', () => {
-  offset -= 1200;
+  offset -= slide.offsetWidth + 20;
   if (offset < 0) {
-    offset = 3600
+    offset = (slide.offsetWidth + 20) * (allSlides.length - 1)
   }
   slider.style.left = -offset + 'px'
 })

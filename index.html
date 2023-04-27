@@ -9,40 +9,42 @@
 </head>
 <body>
   <header>
-    <div class="container navbar__wrapper">
-      <div class="navbar__logo-wrapper">
-        <div class="navbar__logo">
-          <picture>
-            <source media="(max-width: 500px)" srcset="./img/logo-mobile.png">
-            <img src="./img/main-logo.png" alt="">
-          </picture>
+    <div class="container navbar">
+      <div class="navbar__wrapper">
+        <div class="navbar__logo-wrapper">
+          <div class="navbar__logo">
+            <picture>
+              <source media="(max-width: 500px)" srcset="./img/logo-mobile.png">
+              <img src="./img/main-logo.png" alt="">
+            </picture>
+          </div>
+          <span class="navbar__title">
+            Изготовление мебели на заказ в Челябинске
+          </span>
         </div>
-        <span class="navbar__title">
-          Изготовление мебели на заказ в Челябинске
-        </span>
+        <nav class="navbar__nav">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Каталог</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Заявка</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="navbar__contacts">
+          <span class="navbar__contacts-tel">
+            8 (999) 444-34-22
+          </span>
+          <span class="navbar__contacts-time">
+            с 9 00 до 18 00
+          </span>
+        </div>
+        <button class="navbar__burger">Открыть меню</button>
       </div>
-      <nav class="navbar__nav">
-        <ul class="navbar__list">
-          <li class="navbar__item">
-            <a class="navbar__link" href="#">Каталог</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="#">Заявка</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="#">Отзывы</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="navbar__contacts">
-        <span class="navbar__contacts-tel">
-          8 (999) 444-34-22
-        </span>
-        <span class="navbar__contacts-time">
-          с 9 00 до 18 00
-        </span>
-      </div>
-      <button class="navbar__burger">Открыть меню</button>
     </div>
     <div class="container header__wrapper">
       <p class="header__title header__title--part1">
