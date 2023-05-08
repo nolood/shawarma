@@ -5,8 +5,8 @@ const catalogTabsContent = document.querySelectorAll('.catalog__content')
 const slider = document.querySelector('.reviews__list')
 const nextSlide = document.getElementById('next')
 const prevSlide = document.getElementById('prev')
-const slide = document.querySelector('.reviews__item')
-const allSlides = document.querySelectorAll('.reviews__item')
+const slide = document.querySelector('.review__li')
+const allSlides = document.querySelectorAll('.review__li')
 let offset = 0;
 
 

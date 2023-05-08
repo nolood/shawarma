@@ -533,14 +533,15 @@ input:focus {
   display: flex;
 }
 
-.reviews__item {
-  min-width: 50%;
+.review__li {
+  min-width: 100%;
   margin-right: 20px;
+  display: flex;
 }
 
 .review__text {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 28px;
   color: #000000;
   margin: 0;
@@ -709,6 +710,15 @@ input:focus {
   .reviews__wrap {
     padding: 0;
   }
+  .review__li {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .review__text {
+    text-wrap: normal;
+    max-width: 80%;
+  }
+
 
 }
 
@@ -745,6 +755,10 @@ input:focus {
   .catalog__item {
     margin: 0;
   }
+
+  .review__text {
+    max-width: 70%;
+  }
 }
 
 
@@ -759,6 +773,10 @@ input:focus {
   }
   .catalog__content-card:first-child {
     margin-right: 0;
+  }
+
+  .review__text {
+    max-width: 60%;
   }
 } 
 
@@ -873,6 +891,9 @@ input:focus {
     top: 25px;
     transform: rotate(-45deg);
     box-shadow: none;
+  }
+  .review__text {
+    max-width: 50%;
   }
 }
 
